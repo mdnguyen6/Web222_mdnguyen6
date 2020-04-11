@@ -1,0 +1,119 @@
+* {
+    box-sizing: border-box;
+}
+
+/* header */
+header{
+    background-color: #ddd;
+    text-align: center;
+    border-radius: 5px;
+    padding:10px 25px;
+}
+
+/* left side */
+aside{
+    float: left;
+    width: 20%;
+    border-radius: 5px;
+    margin: 20px 0px;
+}
+
+nav ul li{
+    display: flex;
+}
+
+nav ul li a{ 
+    border-bottom: 1px solid black;
+    padding: 8px;
+    margin-top: 7px;	
+    font-weight:bold;
+    text-transform: uppercase;
+    font-size:13px;
+    cursor: pointer;
+}
+
+h3{
+    text-align: center;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #332902;
+}
+/* main */
+.main{
+    margin: 20px 0px;
+    float: left;
+    width: 60%;  
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    padding: 0 20px;
+    overflow: hidden;
+}
+
+.main .data {
+    margin-bottom: 10px;
+    text-align: center;
+    border-bottom: 1px solid black;
+}
+
+.main .data a:hover{
+    color: red;
+}
+
+img{
+    margin-top: 20px;
+    width: 50%;
+    height: 25%;
+    border: 1px solid black;
+}
+
+.reflect ul li{
+    font-size: 20px;
+}
+
+.main .data p{
+    margin-left: 20px;
+}
+
+/* right side */
+.right{
+    padding: 10px 15px;
+    margin-top: 7px;
+    margin-bottom: 7px;
+    background-color: lightblue;
+    float: left;
+    width: 20%;
+}
+
+.right p{
+    margin-left: 20px;
+}
+/* Footer */
+footer{
+    clear:both;
+    border-radius: 5px;
+    margin: 20px 0px;
+    text-align: center;
+    background-color: #444;
+    color: #eee;
+    padding:10px 25px;
+}
+
+footer a{
+    color: #ddd;
+}
+
+@media only screen and (max-width:500px) {
+    /* For mobile phones: */
+    .right,
+    .main, 
+    aside, 
+    header, 
+    footer
+    {
+        width: 100%;
+    }
+    aside{
+        border-bottom: 1px solid #ddd;
+    }
+}
